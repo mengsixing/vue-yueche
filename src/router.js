@@ -11,6 +11,13 @@ import MessageVerification from './views/login/MessageVerification.vue'
 import MyAbout from './views/my/About.vue'
 import MyCoupon from './views/my/Coupon.vue'
 import MyFeedback from './views/my/Feedback.vue'
+import MyMessage from './views/my/Message.vue'
+import MyRecruit from './views/my/Recruit.vue'
+import MyTrip from './views/my/Trip.vue'
+
+
+
+
 
 
 
@@ -73,6 +80,21 @@ export default new Router({
       path: '/my/feedback',
       name: 'feedback',
       component: MyFeedback
+    },
+    {
+      path: '/my/message',
+      name: 'message',
+      component: MyMessage
+    },
+    {
+      path: '/my/recruit',
+      name: 'recruit',
+      component: MyRecruit
+    },
+    {
+      path: '/my/trip',
+      name: 'trip',
+      component: MyTrip
     },
   ]
 })
