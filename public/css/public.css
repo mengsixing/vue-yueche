@@ -7,6 +7,9 @@ html {
 	/*font-family: 'Microsoft YaHei', '微软雅黑';*/
 	font-size: 483.0917874396135%;
 }
+body{
+	overflow: hidden;
+}
 @media screen and (min-width: 360px) {
 	html {
 		font-size: 543.4782608695652%;
