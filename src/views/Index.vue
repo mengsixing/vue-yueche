@@ -338,7 +338,7 @@ export default {
   },
   data() {
     return {
-      showEvaluate:true,
+      showEvaluate: true,
       myInfo: {},
       serviceList: [],
       hotLineList: []
@@ -493,7 +493,8 @@ export default {
 </script>
 
 <style scoped>
-@import url(../assets/css/waiting.css);
+@import url("../assets/css/indexPublic.css");
+@import url("../assets/css/waiting.css");
 /*
 for：业务首页
 date：2018-09
