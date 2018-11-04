@@ -481,6 +481,8 @@ export default {
 </script>
 
 <style scoped>
+
+@import url('../assets/css/indexPublic.css');
 /*
 for：业务首页
 date：2018-09
