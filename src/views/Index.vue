@@ -59,8 +59,10 @@
           <i class="icon-location"></i>
         </div>
       </div>
+      <!-- 等待中 -->
+      <waiting v-if="status===1"></waiting>
       <!--选择线路-->
-      <div class="line am-center">
+      <div v-if="status===0" class="line am-center">
         <nav role="navigation am-text-center">
           <a class="active" href="javascript:;" title="">现在</a>
           <a href="javascript:;" title="">预约</a>
@@ -105,11 +107,11 @@
           </div>
         </div>
       </div>
-      <div class="button am-center">
+      <div v-if="status===0" class="button am-center">
         <button class="am-btn am-btn-block am-btn-danger" type="submit">立即下单</button>
       </div>
       <!--热门线路-->
-      <div class="hotline am-center">
+      <div v-if="status===0" class="hotline am-center">
         <div class="title am-center">
           <h1 class="am-fl">
             <i class="am-icon-volume-up am-text-center"></i>
@@ -328,17 +330,20 @@
 
 <script>
 import Evaluate from "./components/Evaluate.vue";
+import Waiting from "./components/Waiting.vue";
 import axios from "axios";
 
 export default {
   name: "HelloWorld",
-  components: { Evaluate },
+  components: { Evaluate, Waiting },
   props: {
     msg: String
   },
   data() {
     return {
-      showEvaluate: true,
+      status: 1, // 流程状态编号，1：onwaiting
+      onWaiting: true,
+      showEvaluate: false,
       myInfo: {},
       serviceList: [],
       hotLineList: []
@@ -515,7 +520,7 @@ main {
 重新定位
 */
 main .location {
-  width: 93%;
+  /* width: 93%; */
 }
 .location div {
   width: 0.3rem;

@@ -1,46 +1,47 @@
 <template>
-	<!--订单评价-->
-	<div class="active" id="evaluate" role="contentinfo">
-		<div class="evaluateBox">
-			<div class="evaluate">
-				<div class="uFace am-round am-center am-text-center">
-					<i class="am-icon-user"></i>
-					<img class="am-round" src="../../assets/images/p2.jpg" alt="">
-				</div>
-				<div class="uInfo am-text-center">
-					<div>王师傅</div>
-					<span>川A29181G</span>
-				</div>
-				<div class="uStar am-text-center">
-					<i class="am-icon-star"></i>
-					<i class="am-icon-star"></i>
-					<i class="am-icon-star"></i>
-					<i class="am-icon-star"></i>
-					<i class="am-icon-star-half-o"></i>
-				</div>
-				<div id="eval-form">
-					<div class="star am-center am-text-center">
-						<i v-for="i in [1,2,3,4,5]" :key="i" class="am-icon-star" :class="{active:stars>=i}" @click="setStar(i)"></i>
-						<!--星级-->
-					</div>
-					<div class="fTip am-text-center">感谢您的评价，司机会更加努力</div>
-					<div class="checkbox am-center am-text-center">
-						<label :for="'drivercmt-'+cmt.id" v-for="cmt in comments" :key="cmt.id">
-							<div class="am-round" :class="{active:selectCmts.indexOf(cmt)>-1}">{{cmt.desc}}</div>
-							<input type="checkbox" v-model="selectCmts" name="drivercmt" :value="cmt" :id="'drivercmt-'+cmt.id">
-						</label>
-					</div>
-					<div class="fButton am-text-center"><button class="am-btn am-btn-danger am-round" @click="doComment">评价</button></div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!--订单评价-->
+  <div v-show="showMe" class="active" id="evaluate" role="contentinfo">
+    <div class="evaluateBox">
+      <div class="evaluate">
+        <div class="uFace am-round am-center am-text-center">
+          <i class="am-icon-user"></i>
+          <img class="am-round" src="../../assets/images/p2.jpg" alt="">
+        </div>
+        <div class="uInfo am-text-center">
+          <div>王师傅</div>
+          <span>川A29181G</span>
+        </div>
+        <div class="uStar am-text-center">
+          <i class="am-icon-star"></i>
+          <i class="am-icon-star"></i>
+          <i class="am-icon-star"></i>
+          <i class="am-icon-star"></i>
+          <i class="am-icon-star-half-o"></i>
+        </div>
+        <div id="eval-form">
+          <div class="star am-center am-text-center">
+            <i v-for="i in [1,2,3,4,5]" :key="i" class="am-icon-star" :class="{active:stars>=i}" @click="setStar(i)"></i>
+            <!--星级-->
+          </div>
+          <div class="fTip am-text-center">感谢您的评价，司机会更加努力</div>
+          <div class="checkbox am-center am-text-center">
+            <label :for="'drivercmt-'+cmt.id" v-for="cmt in comments" :key="cmt.id">
+              <div class="am-round" :class="{active:selectCmts.indexOf(cmt)>-1}">{{cmt.desc}}</div>
+              <input type="checkbox" v-model="selectCmts" name="drivercmt" :value="cmt" :id="'drivercmt-'+cmt.id">
+            </label>
+          </div>
+          <div class="fButton am-text-center"><button class="am-btn am-btn-danger am-round" @click="doComment">评价</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
   props: [],
   data() {
     return {
+      showMe: true,
       selectCmts: [],
       comments: [
         { id: 1, desc: "服务好" },
@@ -57,6 +58,7 @@ export default {
     },
     doComment() {
       console.log("评价成功");
+      this.showMe = false;
     }
   }
 };
