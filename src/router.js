@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Index.vue'
 import Complain from './views/Complain.vue'
 import CreateOrder from './views/CreateOrder.vue'
+import Law from './views/Law.vue'
 import Refund from './views/Refund.vue'
 import Login from './views/login/Login.vue'
 import LoginMessage from './views/login/LoginMessage.vue'
@@ -101,6 +102,11 @@ export default new Router({
       path: '/my/newsdetail',
       name: 'newsdetail',
       component: NewsDetail
+    },
+    {
+      path: '/law',
+      name: 'law',
+      component: Law
     },
   ]
 })

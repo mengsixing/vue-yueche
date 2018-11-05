@@ -23,12 +23,5 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../assets/css/header.css");
 @import url("../../assets/css/details.css");
-.main {
-  position: relative;
-  margin-top: 0.8rem;
-  height: auto;
-  overflow-y: auto;
-}
 </style>
