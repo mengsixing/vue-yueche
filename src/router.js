@@ -14,6 +14,7 @@ import MyFeedback from './views/my/Feedback.vue'
 import MyMessage from './views/my/Message.vue'
 import MyRecruit from './views/my/Recruit.vue'
 import MyTrip from './views/my/Trip.vue'
+import NewsDetail from './views/my/NewsDetail.vue'
 
 
 
@@ -95,6 +96,11 @@ export default new Router({
       path: '/my/trip',
       name: 'trip',
       component: MyTrip
+    },
+    {
+      path: '/my/newsdetail',
+      name: 'newsdetail',
+      component: NewsDetail
     },
   ]
 })
