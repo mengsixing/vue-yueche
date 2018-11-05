@@ -54,7 +54,7 @@
     <!--主体-->
     <main role="main">
       <!--重新定位-->
-      <div class="location am-center">
+      <div v-if="status===0" class="location am-center">
         <div class="am-text-center">
           <i class="icon-location"></i>
         </div>
@@ -136,6 +136,12 @@
         </div>
       </div>
     </main>
+    <!--二维码-->
+    <div id="qrcode" role="contentinfo">
+      <div class="qrcodeBox">
+        <div class="img am-round am-text-center"><img src="images/qrcode.jpg" alt=""></div>
+      </div>
+    </div>
     <!--会员-->
     <div id="member" role="contentinfo">
       <div class="member">
@@ -329,10 +335,12 @@
 </template>
 
 <script>
+import Vue from "vue";
+import axios from "axios";
+import VueBus from "vue-bus";
 import Evaluate from "./components/Evaluate.vue";
 import Waiting from "./components/Waiting.vue";
-import axios from "axios";
-
+Vue.use(VueBus);
 export default {
   name: "HelloWorld",
   components: { Evaluate, Waiting },
@@ -520,13 +528,13 @@ main {
 重新定位
 */
 main .location {
-  /* width: 93%; */
+  width: 93%;
 }
 .location div {
   width: 0.3rem;
   height: 0.3rem;
   border: 1px solid #ddd;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 200px;
   box-shadow: 0.02rem 0.02rem 0.02rem rgba(51, 51, 51, 0.1),
     -0.02rem -0.02rem 0.02rem rgba(51, 51, 51, 0.1);
