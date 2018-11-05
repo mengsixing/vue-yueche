@@ -3,20 +3,20 @@ for：会员-信息详情
 date：2018-09
 */
 /* CSS Document */
-header {
+/* header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 11;
-}
+} */
 
 /*
 主体
 */
-main {
+/* main {
 	width: 100%;
 	margin-top: .67rem;
-}
+} */
 .box {
 	width: 93%;
 	box-shadow: .02rem .02rem .02rem rgba(51,51,51,.1), -.02rem -.02rem .02rem rgba(51,51,51,.1);
