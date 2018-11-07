@@ -531,7 +531,7 @@ main .location {
   width: 0.3rem;
   height: 0.3rem;
   border: 1px solid #ddd;
-  /* background-color: #fff; */
+  background-color: #fff;
   border-radius: 200px;
   box-shadow: 0.02rem 0.02rem 0.02rem rgba(51, 51, 51, 0.1),
     -0.02rem -0.02rem 0.02rem rgba(51, 51, 51, 0.1);

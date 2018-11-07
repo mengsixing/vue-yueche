@@ -37,6 +37,8 @@ export default {
 
 <style scoped src="../assets/css/about.css">
 /* @import url("../assets/css/about.css"); */
+</style>
+<style scoped>
 .box {
   box-shadow: none;
   background: none;

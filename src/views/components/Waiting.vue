@@ -88,3 +88,8 @@ export default {
 
 <style scoped src="../../assets/css/waiting.css">
 </style>
+<style scoped>
+#waiting-ctn {
+  background: #fff;
+}
+</style>
