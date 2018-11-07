@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <com-header :title="title"></com-header>
-        <div class="container">
-            <slot></slot>
-        </div>
+  <div>
+    <com-header :title="title"></com-header>
+    <div class="container">
+      <slot></slot>
     </div>
+  </div>
 </template>
 <script>
 import ComHeader from "./ComHeader.vue";
@@ -17,8 +17,9 @@ export default {
 </script>
 <style scoped>
 .container {
-  height: 100vh;
-  padding-top: 0.7rem;
+  height: calc(100vh - 0.52rem);
+  margin-top: .03rem;
   overflow: auto;
+  background-color: #f1f1f1;
 }
 </style>

@@ -24,3 +24,6 @@ export default {
 <style scoped src="../../assets/css/setModify.css">
 /* @import url("../../assets/css/setModify.css"); */
 </style>
+<style scoped>
+
+</style>

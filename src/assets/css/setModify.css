@@ -34,6 +34,7 @@ main {
 	line-height: .56rem;
 }
 .icon {
+	display: flex;
 	width: .3rem;
 }
 .am-icon-mobile {

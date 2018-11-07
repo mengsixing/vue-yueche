@@ -346,7 +346,7 @@ export default {
   },
   data() {
     return {
-      status: 1, // 流程状态编号，1：onwaiting
+      status: 0, // 流程状态编号，1：onwaiting
       onWaiting: true,
       showEvaluate: false,
       myInfo: {},
