@@ -86,5 +86,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped src="../../assets/css/waiting.css">
 </style>

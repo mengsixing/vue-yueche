@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../assets/css/waiting.css");
 /*
 for：订单评价
 date：2018-09
