@@ -137,11 +137,7 @@
       </div>
     </main>
     <!--二维码-->
-    <div id="qrcode" role="contentinfo">
-      <div class="qrcodeBox">
-        <div class="img am-round am-text-center"><img src="images/qrcode.jpg" alt=""></div>
-      </div>
-    </div>
+    <qrcode v-if="status===1"></qrcode>
     <!--会员-->
     <div id="member" role="contentinfo">
       <div class="member">
@@ -340,10 +336,11 @@ import axios from "axios";
 import VueBus from "vue-bus";
 import Evaluate from "./components/Evaluate.vue";
 import Waiting from "./components/Waiting.vue";
+import qrcode from "./components/qrcode.vue";
 Vue.use(VueBus);
 export default {
   name: "HelloWorld",
-  components: { Evaluate, Waiting },
+  components: { Evaluate, Waiting, qrcode},
   props: {
     msg: String
   },

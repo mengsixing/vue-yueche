@@ -22,6 +22,6 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("../../assets/css/details.css");
+<style scoped src="../../assets/css/details.css">
+/* @import url("../../assets/css/details.css"); */
 </style>

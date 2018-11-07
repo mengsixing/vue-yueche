@@ -35,8 +35,8 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("../assets/css/about.css");
+<style scoped src="../assets/css/about.css">
+/* @import url("../assets/css/about.css"); */
 .box {
   box-shadow: none;
   background: none;

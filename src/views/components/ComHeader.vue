@@ -15,6 +15,5 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url(../../assets/css/header.css);
+<style scoped src="../../assets/css/header.css">
 </style>
