@@ -17,3 +17,23 @@ export default {
 
 <style scoped src="../../assets/css/header.css">
 </style>
+<style scoped>
+#header {
+  position: relative;
+}
+#header .back {
+  font-size: 0;
+  line-height: 0.52rem;
+}
+#header a i {
+  vertical-align: middle;
+  margin-right: 0.05rem;
+}
+#header a span {
+  top:0;
+  display:inline-block;
+  vertical-align: middle;
+  font-size: 0.14rem;
+}
+</style>
+
