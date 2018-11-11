@@ -17,6 +17,7 @@ import MyRecruit from './views/my/Recruit.vue'
 import MyTrip from './views/my/Trip.vue'
 import NewsDetail from './views/my/NewsDetail.vue'
 import ModifyPhone from './views/my/ModifyPhone.vue'
+import Setting from './views/my/Setting.vue'
 
 
 
@@ -108,6 +109,11 @@ export default new Router({
       path: '/my/modifyphone',
       name: 'modifyphone',
       component: ModifyPhone
+    },
+    {
+      path: '/my/setting',
+      name: 'setting',
+      component: Setting
     },
     {
       path: '/law',
