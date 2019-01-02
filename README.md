@@ -1,5 +1,7 @@
 # hello-world
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yhlben/vue-yueche.svg)](https://greenkeeper.io/)
+
 ## Project setup
 
 ```
